@@ -1002,42 +1002,59 @@ footer{
 
 </section>  <!-- ==================================================  
      FEEDBACK  
-================================================== -->  <section>  <h2 class="section-title">  
+================================================== -->  <!-- ==================================================
+     READERS FEEDBACK
+================================================== -->
 
-    Readers Feedback  
+<section>
 
-</h2>  
+    <h2 class="section-title">
+        Readers Feedback
+    </h2>
 
+    <div class="card feedback">
 
-<div class="card feedback">  
+        <p style="text-align:center; color:#e1d4cb; line-height:2;">
+            میری تحریر پڑھ کر اپنی رائے میرے ساتھ ضرور شیئر کریں۔ 🤍
+        </p>
 
+        <form
+        action="https://formsubmit.co/YOUR-EMAIL-HERE"
+        method="POST">
 
-    <p>  
+            <!-- Email subject -->
+            <input
+            type="hidden"
+            name="_subject"
+            value="خاموش کرن — Readers Feedback">
 
-        میری تحریر پڑھ کر اپنی رائے میرے ساتھ ضرور شیئر کریں۔ 🤍  
+            <!-- Reply directly to reader -->
+            <input
+            type="email"
+            name="email"
+            placeholder="آپ کا Email"
+            required>
 
-    </p>  
+            <!-- Reader Name -->
+            <input
+            type="text"
+            name="name"
+            placeholder="آپ کا نام"
+            required>
 
+            <!-- Feedback -->
+            <textarea
+            name="message"
+            placeholder="اپنی رائے یہاں لکھیں..."
+            required></textarea>
 
-    <input  
-    type="text"  
-    placeholder="آپ کا نام">  
+            <button type="submit">
+                Feedback Send کریں 🤍
+            </button>
 
+        </form>
 
-    <textarea  
-    placeholder="اپنی رائے یہاں لکھیں..."></textarea>  
-
-
-    <button  
-    type="button"  
-    onclick="alert('آپ کی رائے کا شکریہ! 🤍')">  
-
-        Feedback Send کریں  
-
-    </button>  
-
-
-</div>
+    </div>
 
 </section>  <!-- ==================================================  
      FOOTER  
